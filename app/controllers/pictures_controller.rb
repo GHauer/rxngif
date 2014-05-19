@@ -39,6 +39,9 @@ class PicturesController < ApplicationController
     @picture.caption= params[:caption]
     @picture.source= params[:source]
     @picture.save
+
+    redirect_to("http://localhost:3000/all_pictures")
+
   end
 
 end
