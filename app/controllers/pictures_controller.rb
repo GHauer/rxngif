@@ -8,18 +8,21 @@ class PicturesController < ApplicationController
     @list_of_pictures = Picture.all
   end
 
-  def create
-    @picture=Picture.new
-    @picture.caption= params[:caption]
-    @picture.source= params[:source]
-    @picture.save
-  end
 
-  def update
-    @picture=Picture.find_by({:id => params[:id]})
-    @picture.caption= params[:caption]
-    @picture.source= params[:source]
-    @picture.save
-  end
+# def create
+#     @picture=Picture.new
+#     @picture.caption= params[:caption]
+#     @picture.source= params[:source]
+#     @picture.save
+#   end
+
+#   def update
+#     @picture=Picture.find_by({:id => params[:id]})
+#     @picture.caption= params[:caption]
+#     @picture.source= params[:source]
+#     @picture.save
+#   end=end
+
+
 
 end
