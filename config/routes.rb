@@ -7,6 +7,8 @@ Rxngif::Application.routes.draw do
 
   get("/create_picture", { :controller => "pictures", :action => "create" })
 
-  get("/delete_picture", { :controller => "pictures", :action => "delete" })
+  # get("/delete_picture/<%= @picture.id %>", { :controller => "pictures", :action => "delete" })
+
+  get("/delete_picture/:id", { :controller => "pictures", :action => "destroy" })
 
 end
