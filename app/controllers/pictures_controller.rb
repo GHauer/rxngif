@@ -15,23 +15,15 @@ class PicturesController < ApplicationController
     @picture.save
 
     redirect_to("http://localhost:3000/create_picture")
-
   end
 
   def create
-
     redirect_to("http://localhost:3000/all_pictures")
-
   end
 
+  def delete
 
-
-
-
-
-
-
-
+  end
 
 
 #   def update
