@@ -29,6 +29,9 @@ class PicturesController < ApplicationController
     redirect_to("http://localhost:3000/all_pictures")
   end
 
+  def edit
+    @picture = Picture.find(params[:id])
+  end
 
 #   def update
 #     @picture=Picture.find_by({:id => params[:id]})
