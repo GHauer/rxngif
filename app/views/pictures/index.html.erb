@@ -1,0 +1,6 @@
+<% @list_of_pictures.each do |picture| %>
+
+<img src="<%=picture.source%>" width="400">
+  <dt></dt>
+  <dd><%= picture.caption%></dd>
+<% end %>
